@@ -422,4 +422,8 @@ img{
   .titleContact{
     padding-top: 260%; 
   }
+
+  button{
+    width: 25%;
+  }
 }
