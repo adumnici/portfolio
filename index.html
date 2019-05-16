@@ -1,0 +1,101 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>Adrian Dumnici - Web Developer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="newindex.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        <section class="sticky">
+            <div class="topnav" id="myTopNav">
+                <a href="#home" class="active">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>  
+                <a href="javascript:void(0)" class="icon" onclick="dropdown()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </section>
+        <section class='mainSection intro' id="home">
+            <div class="mainScreen">
+                <h1>Adrian Dumnici</h1>
+                <h2 id="title">Web Developer</h2>
+                <a href="#projects" id="firstLink">View Projects</a>
+            </div>
+        </section>
+        <section class='mainSection' id="projects">
+            <div class="mainSection-div">
+                <h2 class="projectTitle">Projects</h2>
+                <div class="projects wrapper">
+                    <div class="container">
+                        <img src="smart-brain-background.png" class="projectImg">
+                        <div class="info">
+                            <h5>Computer Vision</h5>
+                            <p>Face recognition app making use of Clarifai's API. Built with React, Node.js and PostgreSQL</p>
+                            <a class="websiteBtn" href="">Website</a>
+                            <a class="githubBtn" href="">Github</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="desirous-background.png" class="projectImg">
+                        <div class="info">
+                            <h5>Desirous</h5>
+                            <p>Local-search app which makes use of Yelp's API. The app was built using React.</p>
+                            <a class="websiteBtn" href="desiW">Website</a>
+                            <a class="githubBtn" href="desiG">Github</a>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="rps-game-background.png" class="projectImg">
+                        <div class="info">
+                            <h5>Rock Paper Scissors Game</h5>
+                            <p>This app is built using React, and it's intended to give players a harder challenge than other existing Rock Paper Scissors apps.</p>
+                            <a class="websiteBtn" href="rockW">Website</a>
+                            <a class="githubBtn" href="rockG">Github</a>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section>
+        <section class='mainSection'id='about'>
+            <div>
+                <div class="containerAbout">
+                    <div class="containerSmall">
+                        <h2 class="titleAbout">About</h2>
+                        <p class="text">I started my journey into full-stack web development in 2018. I started my journey because I have a passion for learning and building things. Since then, I constantly strived to make each project better than the last.</p>
+                    </div>
+                    <img src="skills.png" class="skills">
+                </div>
+            </div>
+        </section>
+        <section class='mainSection'id='contact'>
+            <div class="containerContact">
+                <div class="containerContactSmall">
+                    <h2 class="titleContact">Contact Me</h2>
+                    <p class="text">I'm currently available for new opportunities. If you have a project that you want to get started, if you think you need my help with something, or just fancy saying hi — then get in touch!</p>
+                </div>
+                <div class="containerForm">
+                    <form action="/contact" method="POST" enctype="text/plain" id="contact_form" role="form">
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" placeholder="Name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" placeholder="Email" name="email" required title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$">
+                        </div>
+                        <div>
+                            <label for="message"></label>
+                            <textarea rows="10" placeholder="Please enter your message" required minlength="20" name="message"></textarea>
+                        </div>
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
