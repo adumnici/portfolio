@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="index.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script type="text/javascript" src="./index.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <section class="sticky">
@@ -22,7 +23,9 @@
         <section class='mainSection intro' id="home">
             <div class="mainScreen">
                 <h1>Adrian Dumnici</h1>
-                <h2 id="title">Web Developer</h2>
+                <div class="typewriter">
+                    <h2 id="title">Web Developer</h2>
+                </div>
                 <a href="#projects" id="firstLink">View Projects</a>
             </div>
         </section>
@@ -30,7 +33,7 @@
             <div class="mainSection-div">
                 <h2 class="projectTitle">Projects</h2>
                 <div class="projects wrapper">
-                    <div class="container">
+                    <div class="container animated slideInLeft">
                         <img src="smart-brain-background.png" class="projectImg">
                         <div class="info">
                             <h5>Computer Vision</h5>
@@ -96,6 +99,7 @@
                     </form>
                 </div>
             </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         </section>
     </body>
 </html>

@@ -321,6 +321,10 @@ body{
 
 /* Font styling */
 
+html{
+  font-family: 'Roboto', sans-serif;
+}
+
 h1{
   font-weight: 800;
   font-size: 4.5rem;
@@ -334,7 +338,6 @@ h1{
 h2{
   font-weight: 800;
   font-size: 4.5rem;
-  font-weight: 300;
   line-height: 1.2;
 }
 
@@ -351,6 +354,10 @@ h5{
 
 input, textarea{
   padding: .5rem 1rem;
+}
+
+textarea{
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Button styling */
@@ -424,6 +431,33 @@ img{
   }
 
   button{
-    width: 25%;
+    width: 35%;
+  }
+
+  #myBtn{
+    width: 50%;
   }
 }
+
+/* Go to top */
+#myBtn {
+display: none; 
+position: fixed; 
+bottom: 20px; 
+right: 30px; 
+z-index: 99; 
+border: none; 
+outline: none; 
+background-color: #66FCF1; 
+color: white;
+cursor: pointer; 
+padding: 15px; 
+border-radius: 10px; 
+font-size: 18px; 
+width: 5%
+}
+
+#myBtn:hover {
+background-color: #555; 
+}
+
